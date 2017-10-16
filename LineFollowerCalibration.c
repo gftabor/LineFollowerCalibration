@@ -49,8 +49,7 @@ void pre_auton()
 }
 int getSensorPercent(int value,int min, int max){
 
-
-	int return_val= (value-min)/(max-min);
+	int return_val= (100*(value-min))/(max-min);
 	if(return_val<0)
 		return 0;
 	if(return_val>100)
